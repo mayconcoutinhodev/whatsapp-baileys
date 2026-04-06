@@ -1,0 +1,56 @@
+{
+  "name": "whatsapp-baileys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+"dev:backend": "ts-node-dev --respawn --transpile-only src/backend/main.ts",
+  "dev:frontend": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "db:migrate": "npx prisma migrate dev",
+  "db:generate": "npx prisma generate"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayconcoutinhodev/whatsapp-baileys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayconcoutinhodev/whatsapp-baileys/issues"
+  },
+  "homepage": "https://github.com/mayconcoutinhodev/whatsapp-baileys#readme",
+  "dependencies": {
+    "@nestjs/common": "^11.1.16",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^11.1.16",
+    "@nestjs/platform-express": "^11.1.16",
+    "@prisma/client": "^7.4.2",
+    "@tauri-apps/api": "^2.10.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "clsx": "^2.1.1",
+    "jimp": "^1.6.0",
+    "link-preview-js": "^3.2.0",
+    "lucide-react": "^0.577.0",
+    "next": "^16.1.6",
+    "pino": "^10.3.1",
+    "qrcode-terminal": "^0.12.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.10.1",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "prisma": "^7.4.2",
+    "tailwindcss": "^4.2.1"
+  }
+}

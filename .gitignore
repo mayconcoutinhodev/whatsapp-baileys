@@ -1,0 +1,16 @@
+node_modules
+.next
+.env
+prisma/dev.db
+public/uploads/*
+dev.db
+.db-journal
+.db
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/generated/prisma
